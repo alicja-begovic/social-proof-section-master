@@ -1,62 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   background-image: url(/images/bg-pattern-top-mobile.svg);
   background-repeat: no-repeat;
-  margin: 60px 30px;
+  margin: 60px 15px;
+  font-family: "Spartan", sans-serif;
 }
 
 @media (max-width: 375px) {
   .introduction {
     text-align: center;
   }
-
   .introduction__tittle {
     color: hsl(300, 43%, 22%);
+    margin: 0 40px;
+    font-size: 30px;
   }
-
   .introduction__subtitle {
     color: hsl(303, 10%, 53%);
+    margin: 15px 20px 30px 20px;
   }
-
   .opinions {
     text-align: center;
     color: hsl(300, 43%, 22%);
   }
-
   .wrapper {
     margin-bottom: 40px;
   }
-
   .opinions__opinion {
     margin: 20px;
     background: hsl(300, 24%, 96%);
     border-radius: 10px;
     padding: 2px;
   }
-
   .opinion__rate {
     margin: 20px;
   }
-
+  .opinion__category {
+    margin-top: 10px;
+    ;
+  }
   .persone__image {
     width: 15%;
   }
-
   .persone__details {
-    
-    margin-left: 12px;
+    margin: 7px 0 9px 12px;
+    font-size: 13px;
   }
-
   .image__avatar {
     border-radius: 50%;
     width: 100%;
   }
-
-
   .rates__rate {
     background: hsl(300, 43%, 22%);
     color: hsl(300, 24%, 96%);
@@ -64,13 +62,15 @@ body {
     padding: 15px;
     margin: 20px;
   }
-
   .details__veryfication {
     color: hsl(333, 80%, 67%);
   }
-
   .rate__persone {
-      display: flex;
-      
+    display: flex;
+    margin-bottom: 9px;
+  }
+  .persone__description {
+    font-size: x-small;
+    line-height: 17px;
   }
 }
