@@ -35,10 +35,12 @@ body {
   color: hsl(300, 43%, 22%);
 }
 
+ 
+
 .wrapper {
   display: grid;
   grid-template-areas: "intro . rate";
-  grid-template-columns: 500px 100px 700px;
+  grid-template-columns: 300px 400px;
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -51,6 +53,7 @@ body {
 
 .introduction {
   grid-area: intro;
+  width: 500px;
 }
 
 .opinions {
