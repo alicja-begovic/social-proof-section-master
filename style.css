@@ -5,13 +5,105 @@
 }
 
 body {
-  background-image: url(/images/bg-pattern-top-mobile.svg);
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
   background-repeat: no-repeat;
-  margin: 60px 15px;
   font-family: "Spartan", sans-serif;
+  margin: 100px;
 }
 
-@media (max-width: 375px) {
+.introduction__tittle {
+  font-size: 45px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 40px;
+}
+
+.introduction__subtitle {
+  color: hsl(303, 10%, 53%);
+}
+
+.opinions__opinion {
+  width: 400px;
+  margin: 20px;
+  background: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.opinion__category {
+  margin-left: 20px;
+  color: hsl(300, 43%, 22%);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "intro . rate";
+  grid-template-columns: 500px 100px 700px;
+  
+}
+
+.rates {
+  display: inline;
+}
+
+.introduction {
+  grid-area: intro;
+}
+
+.opinions {
+  grid-area: rate;
+}
+
+.rates__rate {
+  background: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px;
+  max-width: 450px;
+  
+}
+
+.image__avatar {
+  border-radius: 50%;
+  width: 10%;
+  
+}
+
+.persone__image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.opinion__rate {
+  display: flex;
+}
+
+.details__veryfication {
+  color:hsl(333, 80%, 67%);
+}
+
+
+
+.persone__details {
+  font-size: small;
+}
+
+.persone__description {
+  font-size: small;
+  line-height: 17px;
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: url(/images/bg-pattern-top-mobile.svg);
+    display: block;
+    width: 100%;
+   
+  }
+  
+  
   .introduction {
     text-align: center;
   }
@@ -27,39 +119,43 @@ body {
   .opinions {
     text-align: center;
     color: hsl(300, 43%, 22%);
+    transition: ease 0.25s transform;
+    transform: translate(400px, -500px);
   }
   .wrapper {
     margin-bottom: 40px;
+    display: block;
   }
   .opinions__opinion {
+   
     margin: 20px;
     background: hsl(300, 24%, 96%);
     border-radius: 10px;
     padding: 2px;
+    
   }
   .opinion__rate {
     margin: 20px;
+    
   }
   .opinion__category {
     margin-top: 10px;
-    ;
+    
   }
-  .persone__image {
-    width: 15%;
-  }
+  
   .persone__details {
-    margin: 7px 0 9px 12px;
+    
     font-size: 13px;
   }
   .image__avatar {
     border-radius: 50%;
-    width: 100%;
+    width: 60%;
   }
   .rates__rate {
     background: hsl(300, 43%, 22%);
     color: hsl(300, 24%, 96%);
     border-radius: 10px;
-    padding: 15px;
+    padding: 40px;
     margin: 20px;
   }
   .details__veryfication {
@@ -68,6 +164,7 @@ body {
   .rate__persone {
     display: flex;
     margin-bottom: 9px;
+    padding: 40px;
   }
   .persone__description {
     font-size: x-small;
